@@ -8,7 +8,7 @@ A full-stack inventory management system implementing **FIFO (First-In-First-Out
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -25,7 +25,7 @@ A full-stack inventory management system implementing **FIFO (First-In-First-Out
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 * **Backend:** Node.js with Express.js
 * **Database:** PostgreSQL 15
@@ -36,9 +36,9 @@ A full-stack inventory management system implementing **FIFO (First-In-First-Out
 
 ---
 
-## 📋 Features
+## Features
 
-### ✅ Completed (Backend)
+###  Completed (Backend)
 
 * FIFO Costing Logic: Accurate first-in-first-out inventory costing
 * Kafka Integration: Real-time event processing for purchases and sales
@@ -48,7 +48,7 @@ A full-stack inventory management system implementing **FIFO (First-In-First-Out
 * Batch Tracking: Individual batch monitoring for precise FIFO calculations
 * Docker Compose: Easy development environment setup
 
-### 🔄 FIFO Logic Implementation
+###  FIFO Logic Implementation
 
 The system implements FIFO costing through the following process:
 
@@ -59,7 +59,7 @@ The system implements FIFO costing through the following process:
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 
@@ -142,7 +142,7 @@ curl -X GET http://localhost:3001/api/transactions \
 
 ---
 
-## 🔄 Kafka Event Format
+## Kafka Event Format
 
 ### Purchase Event
 
@@ -169,7 +169,7 @@ curl -X GET http://localhost:3001/api/transactions \
 
 ---
 
-## 🔗 API Endpoints
+##  API Endpoints
 
 ### Authentication
 
@@ -193,7 +193,7 @@ curl -X GET http://localhost:3001/api/transactions \
 
 ---
 
-## 🧪 Testing Scenarios
+##  Testing Scenarios
 
 ### FIFO Example
 
@@ -210,7 +210,7 @@ curl -X GET http://localhost:3001/api/transactions \
 
 ---
 
-## 🐳 Docker Services
+##  Docker Services for running it on local
 
 * **PostgreSQL:** `localhost:5432`
 * **Kafka:** `localhost:9092`
@@ -219,7 +219,7 @@ curl -X GET http://localhost:3001/api/transactions \
 
 ---
 
-## 🔧 Environment Variables
+##  Environment Variables
 
 Create `.env` in `backend/`:
 
@@ -250,36 +250,25 @@ FRONTEND_URL=http://localhost:3000
 
 ---
 
-## 🔍 Monitoring
+##  Monitoring
 
 * **Kafka UI:** `http://localhost:8080`
 * Monitor topic messages, partitions, and consumer lag
 
 ---
 
-## 🤝 Default Login Credentials
+##  Default Login Credentials
 
 * **Username:** `admin`
 * **Password:** `admin123`
 
 ---
 
-## 📚 Notes
-
-* Topics are auto-created on startup
-* FIFO calculations occur in database transactions
-* Timestamps are stored in UTC
-* Kafka consumer handles events asynchronously
-* PostgreSQL indices optimize query performance
 
 ---
 
 **Author:** Aekansh Singh
 **Version:** 1.0.0
-**License:** MIT
 
 ---
 
-If you want, I can also **add a separate "Frontend" section** to this README so that when you deploy the React dashboard, you can include instructions for connecting both frontend and backend.
-
-Do you want me to do that?
